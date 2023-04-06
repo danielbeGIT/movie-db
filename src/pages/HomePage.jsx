@@ -4,10 +4,9 @@ const HomePage = () => {
 	return (
 		<>
             <h1>Welcome to Movie DB</h1>
-            <p>
-                <strong>Don't click this →</strong>
-                <Link to="/not-found"> CLICK ME</Link>
-            </p>
+            <p>This APP uses TMBD API.</p>
+            <strong>Don't click this →</strong>
+            <Link to="/not-found"> CLICK ME</Link>
         </>
 	)
 }
