@@ -12,7 +12,7 @@ import HomePage from './pages/HomePage'
 import MoviesPage from './pages/MoviesPage'
 import ActorsPage from './pages/ActorsPage'
 import GenresPage from './pages/GenresPage'
-import TrendingPage from './pages/TrendingPage'
+import PopularPage from './pages/PopularPage'
 import TheatresPage from './pages/TheatresPage'
 import TopRatedPage from './pages/TopRatedPage'
 import NotFound from './pages/NotFound'
@@ -30,7 +30,7 @@ function App() {
 					<Route path="/movie/:movieId" element={<MoviesPage />} />
 					<Route path="/actor/:actorId" element={<ActorsPage />} />
 					<Route path="/genres/:genreId" element={<GenresPage />} />
-					<Route path="/trending" element={<TrendingPage />} />
+					<Route path="/Popular" element={<PopularPage />} />
 					<Route path="/theatres" element={<TheatresPage />} />
 					<Route path="/top_rated" element={<TopRatedPage />} />
 					<Route path="*" element={<NotFound />} />

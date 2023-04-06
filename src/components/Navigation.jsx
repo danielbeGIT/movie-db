@@ -16,7 +16,7 @@ const Navigation = () => {
 						<Nav.Link as={NavLink} to="/movie/:movieId" end>Movie</Nav.Link>
 						<Nav.Link as={NavLink} to="/actor/:actorId" end>Actor</Nav.Link>
 						<Nav.Link as={NavLink} to="/genres/:genreId" end>Genre</Nav.Link>
-						<Nav.Link as={NavLink} to="/trending" end>Trending</Nav.Link>
+						<Nav.Link as={NavLink} to="/Popular" end>Popular</Nav.Link>
 						<Nav.Link as={NavLink} to="/theatres" end>In Theatres</Nav.Link>
 						<Nav.Link as={NavLink} to="/top_rated" end>Top Rated</Nav.Link>
 					</Nav>
