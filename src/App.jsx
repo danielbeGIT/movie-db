@@ -1,6 +1,6 @@
-// Imported react
-import Container from 'react-bootstrap/Container'
+// Imported stuff
 import { Routes, Route } from 'react-router-dom'
+import { ReactQueryDevtools } from 'react-query/devtools'
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/styles/App.scss'
 
@@ -24,18 +24,18 @@ function App() {
 		<div id="App">
 			<Navigation />
 
-			<Container className="py-3">
-				<Routes>
-					<Route path="/" element={<HomePage />} />
-					<Route path="/movie/:movieId" element={<MoviesPage />} />
-					<Route path="/actor/:actorId" element={<ActorsPage />} />
-					<Route path="/genres/:genreId" element={<GenresPage />} />
-					<Route path="/Popular" element={<PopularPage />} />
-					<Route path="/theatres" element={<TheatresPage />} />
-					<Route path="/top_rated" element={<TopRatedPage />} />
-					<Route path="*" element={<NotFound />} />
-				</Routes>
-			</Container>
+			<Routes>
+				<Route path="/" element={<HomePage />} />
+				<Route path="/movie/:movieId" element={<MoviesPage />} />
+				<Route path="/actor/:actorId" element={<ActorsPage />} />
+				<Route path="/genres/:genreId" element={<GenresPage />} />
+				<Route path="/Popular" element={<PopularPage />} />
+				<Route path="/theatres" element={<TheatresPage />} />
+				<Route path="/top_rated" element={<TopRatedPage />} />
+				<Route path="*" element={<NotFound />} />
+			</Routes>
+
+			<ReactQueryDevtools />
 		</div>
 	)
 }

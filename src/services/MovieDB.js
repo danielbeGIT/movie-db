@@ -1,5 +1,5 @@
-import axios from "axios";
-const BASE_URL = "https://api.themoviedb.org/3"
+import axios from 'axios';
+const BASE_URL = 'https://api.themoviedb.org/3'
 const API_KEY = import.meta.env.VITE_API_KEY
 
 const get = async (endP) => {
@@ -8,8 +8,8 @@ const get = async (endP) => {
 }
 
 // Get specific actor
-export const getActors = (actorId) => {
-    return get(`${BASE_URL}/person/${actorId}?api_key=${API_KEY}&language=en-US&append_to_response=credits`)
+export const getActors = (id) => {
+    return get(`${BASE_URL}/person/${id}?api_key=${API_KEY}&language=en-US&append_to_response=credits`)
 }
 
 // Get genres
@@ -23,8 +23,8 @@ export const getGenre = (genre, page) => {
 }
 
 // Get specific movie
-export const getMovie = (movieId) => {
-    return get(`${BASE_URL}/movie/${movieId}?api_key=${API_KEY}&language=en-US&append_to_response=credits`)
+export const getMovie = (id) => {
+    return get(`${BASE_URL}/movie/${id}?api_key=${API_KEY}&language=en-US&append_to_response=credits`)
 }
 
 // Get popular movies
