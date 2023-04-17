@@ -9,37 +9,37 @@ const get = async (endP) => {
 
 // Get specific actor
 export const getActors = (id) => {
-    return get(`${BASE_URL}/person/${id}?api_key=${API_KEY}&language=en-US&append_to_response=credits`)
+    return get(`${BASE_URL}/person/${id}?api_key=${API_KEY}&include_adult=false&language=en-US&append_to_response=credits`)
 }
 
 // Get genres
 export const getGenres = () => {
-    return get(`${BASE_URL}/genre/movie/list?api_key=${API_KEY}&language=en-US`)
+    return get(`${BASE_URL}/genre/movie/list?api_key=${API_KEY}&include_adult=false&language=en-US`)
 }
 
 // Get specific genre
-export const getGenre = (genre, page) => {
-    return get(`${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&with_genres=${genre}&page=${page}`)
+export const getGenre = (id, page) => {
+    return get(`${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&with_genres=${id}&page=${page}`)
 }
 
 // Get specific movie
 export const getMovie = (id) => {
-    return get(`${BASE_URL}/movie/${id}?api_key=${API_KEY}&language=en-US&append_to_response=credits`)
+    return get(`${BASE_URL}/movie/${id}?api_key=${API_KEY}&include_adult=false&language=en-US&append_to_response=credits`)
 }
 
 // Get popular movies
 export const getPopular = () => {
-    return get(`${BASE_URL}/movie/popular?api_key=${API_KEY}&language=en-US&page=1`)
+    return get(`${BASE_URL}/movie/popular?api_key=${API_KEY}&include_adult=false&language=en-US&page=1`)
 }
 
 // Get movies in theatres
 export const getTheatres = () => {
-    return get(`${BASE_URL}/movie/now_playing?api_key=${API_KEY}&language=en-US&page=1`)
+    return get(`${BASE_URL}/movie/now_playing?api_key=${API_KEY}&include_adult=false&language=en-US&page=1`)
 }
 
 // Get top rated movies
 export const getTopRated = () => {
-    return get(`${BASE_URL}/movie/top_rated?api_key=${API_KEY}&language=en-US&page=1`)
+    return get(`${BASE_URL}/movie/top_rated?api_key=${API_KEY}&include_adult=false&language=en-US&page=1`)
 }
 
 export default {
