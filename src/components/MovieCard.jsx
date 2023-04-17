@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 const MovieCard = ({ data }) => {
 	const baseImage = "https://image.tmdb.org/t/p/w500"
-	console.log(data)
 
 	return (
 		<div className='d-flex flex-wrap justify-content-evenly'>
@@ -13,12 +12,12 @@ const MovieCard = ({ data }) => {
 					key={index.id}
 				>
 					{index.poster_path && (
-						<Card.Img variant="top" src={`${baseImage}${index.poster_path}`}/>
+						<Card.Img src={`${baseImage}${index.poster_path}`}/>
 					)}
 
 					<Card.Body className='d-flex flex-column'>
 						<Card.Title>{index.title}</Card.Title>
-						<Card.Text className='text-muted'>{index.overview}</Card.Text>
+						<Card.Text>{index.overview}</Card.Text>
 
 						<Button 
 							className='mt-auto' 
