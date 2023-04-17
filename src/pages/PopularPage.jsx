@@ -1,10 +1,12 @@
-import { Container } from 'react-bootstrap'
 import { getPopular } from '../services/MovieDB'
 import { useQuery } from 'react-query'
+import { Container } from 'react-bootstrap'
+
+// Imported components
+import MovieCard from '../components/MovieCard'
 
 const PopularPage = () => {
     const {data, isLoading, error, isError} = useQuery(['popular'], getPopular)
-    console.log(data)
 
     return (
         <Container>
@@ -19,9 +21,8 @@ const PopularPage = () => {
             )}
 
             {data && 
-                <h1>data is showing</h1>
+                <MovieCard data={data}/>
             }
-        
         </Container>
     )
 }
