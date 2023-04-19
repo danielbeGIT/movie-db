@@ -17,13 +17,10 @@ import TheatresPage from './pages/TheatresPage'
 import TopRatedPage from './pages/TopRatedPage'
 import NotFound from './pages/NotFound'
 
-
-
 function App() {
 	return (
 		<div id="App">
 			<Navigation />
-
 			<Routes>
 				<Route path="/" element={<HomePage />} />
 				<Route path="/movie/:movieId" element={<MoviesPage />} />
@@ -34,7 +31,6 @@ function App() {
 				<Route path="/top_rated" element={<TopRatedPage />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
-
 			<ReactQueryDevtools />
 		</div>
 	)

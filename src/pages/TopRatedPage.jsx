@@ -7,7 +7,7 @@ import { Container } from 'react-bootstrap'
 import MovieCard from '../components/MovieCard'
 
 const TopRatedPage = () => {
-	const {data, isLoading, error, isError} = useQuery(['top_rated'], getTopRated)
+	const { data, isLoading, error, isError } = useQuery(['top_rated'], getTopRated)
 
     return (
         <Container className='my-2 p-2'>

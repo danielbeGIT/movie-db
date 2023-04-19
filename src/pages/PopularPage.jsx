@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap'
 import MovieCard from '../components/MovieCard'
 
 const PopularPage = () => {
-    const {data, isLoading, error, isError} = useQuery(['popular'], getPopular)
+    const { data, isLoading, error, isError } = useQuery(['popular'], getPopular)
 
     return (
         <Container>

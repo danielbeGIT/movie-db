@@ -7,7 +7,7 @@ import { Container } from 'react-bootstrap'
 import MovieCard from '../components/MovieCard'
 
 const TheatresPage = () => {
-	const {data, isLoading, error, isError} = useQuery(['theatres'], getTheatres)
+	const { data, isLoading, error, isError } = useQuery(['theatres'], getTheatres)
 
     return (
         <Container className='my-2 p-2'>
