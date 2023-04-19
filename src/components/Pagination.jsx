@@ -14,7 +14,7 @@ const Pagination = ({ page, currentPage, previousPage }) => {
 				Previous
 			</Button>
 
-				<span>Page(s): {page}/500</span>
+			<span>Page(s): {page}/500</span>
 
 			<Button 
 				disabled={previousPage || page >= 500} 
