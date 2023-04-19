@@ -1,3 +1,4 @@
+// Imported react & stuff
 import { getPopular } from '../services/MovieDB'
 import { useQuery } from 'react-query'
 import { Container } from 'react-bootstrap'
