@@ -10,7 +10,7 @@ const PopularPage = () => {
 
     return (
         <Container>
-            <h1>20 Popular Movies</h1>
+            <h1>Popular Movies</h1>
 
             {isLoading && (
                 <p>Loading movies...</p>
